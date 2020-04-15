@@ -54,7 +54,7 @@ a {
 /* end reset */
 
 body {
-  background-color: coral;
+  background-color: #FFF6E8;
 }
 
 h1 {
@@ -125,27 +125,46 @@ h1 {
 
 .wrapper {
   padding: 0 5vw;
+	display: grid;
 }
 
-.hero-text {
+.hero {
   text-align: center;
-  padding: 40px 0 30px 0;
+	padding: 20px 0 30px 0;
 }
 
-.hero-image {
+.responsive-image {
   display: block;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.image-wrapper {
-  /* margin: 30px; */
+.gallery {
+	display: grid;
+	grid-template-columns: minmax(300px, 900px);
+	justify-content: center;
+	padding: 0 20px;
+	/* height: 110vh;
+	overflow-y: scroll; */
+}
 
+.image-wrapper {
+	margin: 0 auto 40px auto;
+	border-radius: 25px;
+	-webkit-box-shadow: inset 5px 8px 3px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 5px 8px 3px 0px rgba(0,0,0,0.25);
+	box-shadow: inset 5px 8px 3px 0px rgba(0,0,0,0.25);
+}
+
+.image-wrapper > * {
+  border-radius: 25px;
+	position: relative;
+	z-index: -1;
 }
 
 .social-links {
   text-align: center;
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .social-links > * {
@@ -155,5 +174,15 @@ h1 {
 
 .social-links > *:hover {
   opacity: .8;
+
+}
+
+.footer-bg {
+	display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-nav {
 
 }
