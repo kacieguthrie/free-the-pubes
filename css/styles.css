@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 :root {
 	--coral: #FE966C;
+	--purple: #3D32C0;
 }
 body {
 	line-height: 1;
@@ -57,6 +58,11 @@ table {
 
 a {
 	text-decoration: none;
+	color: var(--purple);
+}
+
+a p {
+	color: var(--purple);
 }
 
 /* end reset */
@@ -69,7 +75,8 @@ h1 {
   /* color: pink; */
   font-family: 'Modak', cursive;
   font-size: 10vh;
-  -webkit-animation:colorchange 50s infinite alternate;
+	color: var(--coral);
+  /* -webkit-animation:colorchange 50s infinite alternate; */
 }
 
 h2 {
@@ -143,6 +150,21 @@ p {
       }
     }
 
+nav {
+	text-align: center;
+	/* margin-top: -40px; */
+}
+
+nav a, nav p {
+	font-size: 15px;
+	cursor: url(../assets/), pointer;
+}
+
+a > *:hover {
+  color: pink;
+	transition: all 0.4s ease-in-out 0s;
+}
+
 /* Containers */
 .container-lg, .container-sm, .container-half {
   margin: 0 1.6rem 8rem 1.6rem
@@ -185,7 +207,7 @@ p {
 	display: grid;
 	grid-template-columns: minmax(300px, 900px);
 	justify-content: center;
-	padding: 0 20px;
+	padding: 80px 0 20px 0;
 	/* height: 110vh;
 	overflow-y: scroll; */
 }
@@ -206,16 +228,16 @@ p {
 
 .social-links {
   text-align: center;
-  padding: 60px 0;
+  padding: 10px 0 60px 0;
 }
 
 .social-links > * {
   padding: 10px;
-  color: pink;
+  color: var(--coral);
 }
 
 .social-links > *:hover {
-  color: var(--coral);
+  color: pink;
 	transition: all 0.4s ease-in-out 0s;
 }
 
