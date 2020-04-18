@@ -177,6 +177,7 @@ a > *:hover {
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
+	padding: 0 16px;
 }
 
 .container-sm {
@@ -185,6 +186,7 @@ a > *:hover {
   justify-content: center;
 	justify-items: center;
 	text-align: center;
+	padding: 0 16px;
 }
 
 .wrapper {
