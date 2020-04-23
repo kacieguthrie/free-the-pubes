@@ -171,7 +171,7 @@ a > *:hover {
 
 /* Containers */
 .container-lg, .container-sm, .container-half {
-  margin: 0 1.6rem 8rem 1.6rem
+  margin-bottom: 6rem;
 }
 
 .container-half {
@@ -181,7 +181,7 @@ a > *:hover {
 	justify-content: center;
 	justify-items: center;
 	align-items: center;
-	padding: 0 16px;
+	/* padding: 0 16px; */
 }
 
 .container-sm {
@@ -190,29 +190,32 @@ a > *:hover {
   justify-content: center;
 	justify-items: center;
 	text-align: center;
-	padding: 0 16px;
+	/* padding: 0 16px; */
 }
 
 .wrapper {
-  padding: 0 5vw;
+  margin: 0 5vw;
 	display: grid;
 }
 
 .hero {
   text-align: center;
-	padding: 20px 0 30px 0;
+	padding: 20px 0 20px 0;
 }
 
 .hero .mobile {
 	display: none;
+	padding: 0;
 }
 
 @media only screen and (max-width: 480px){
   .hero .mobile {
 		display: block;
+		padding: 0;
   }
 	.hero .full {
 		display: none;
+		padding: 0;
 	}
 }
 
@@ -226,7 +229,7 @@ a > *:hover {
 	display: grid;
 	grid-template-columns: minmax(300px, 900px);
 	justify-content: center;
-	padding: 80px 0 20px 0;
+	padding: 10px 0 20px 0;
 	/* height: 110vh;
 	overflow-y: scroll; */
 }
