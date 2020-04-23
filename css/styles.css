@@ -155,13 +155,17 @@ nav {
 	/* margin-top: -40px; */
 }
 
-nav a, nav p {
+nav p {
 	font-size: 15px;
 	cursor: url(../assets/), pointer;
 }
 
+a p.active {
+	color: var(--coral);
+}
+
 a > *:hover {
-  color: pink;
+  color: var(--coral);
 	transition: all 0.4s ease-in-out 0s;
 }
 
@@ -197,6 +201,19 @@ a > *:hover {
 .hero {
   text-align: center;
 	padding: 20px 0 30px 0;
+}
+
+.hero .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .hero .mobile {
+		display: block;
+  }
+	.hero .full {
+		display: none;
+	}
 }
 
 .responsive-image {
@@ -251,4 +268,12 @@ a > *:hover {
 
 .footer-nav {
 
+}
+
+@media only screen and (max-width: 480px){
+  .rev {
+		display: flex;
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+  }
 }
