@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"</meta>
+    <title>Free the Pubes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 style="text-align: center; margin: 40px 0;">submit a photo</h1>
+    <div class="container-sm" style="margin-bottom: 2rem;">
+        <p>All submissions are anonymous unless you ask to include your name and/or message. </p>
+        <p>***</p>
+        <p>All bodies and degrees of hairiness are welcome here.</p>
+        <img src="assets/stripey-undies.svg" alt="">
+    </div>
+
+    <form
+      action="https://formspree.io/xjvavqyj"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label>
+        Your email (optional):
+        <input type="text" name="_replyto">
+      </label>
+        <label>
+        Your message (optional):
+        <textarea name="message" placeholder="Tell me something cool. Say hi!"></textarea>
+      </label>
+      <label>
+        Your photo:
+        <input type="file" name="upload">
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+    <nav class="">
+      <a href="index.html">
+        <p>how to get beach ready</p>
+      </a>
+      <a href="swim-gallery.html">
+        <p>beach gallery</p>
+      </a>
+      <a>
+        <p class="active">submit a photo</p>
+      </a>
+      <!-- <a href="https://www.instagram.com/freethepubes/" alt="Instagram" target="_blank" class="social-link">
+        <p>follow us!</p>
+      </a> -->
+      <div class="social-links" style="">
+        <a href="https://www.instagram.com/freethepubes/" alt="Instagram" target="_blank" class="social-link">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+      </div>
+    </nav>
+    <footer>
+      <img src="assets/footer-bg.png" alt="" class="footer-bg">
+    </footer>
+  </body>
+</html>
